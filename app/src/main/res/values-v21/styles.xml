@@ -41,4 +41,5 @@
         <item name="android:statusBarColor">@color/color_0176da</item>
         <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.ZhiHu</item>
     </style>
+
 </resources>

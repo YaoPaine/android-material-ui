@@ -1,43 +1,52 @@
 package com.yaopaine.coordinatorylayout;
 
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBar;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.yaopaine.coordinatorylayout.material.activity.base.BaseActivity;
+
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-       /* Toolbar toolBar = (Toolbar) findViewById(R.id.tool_bar);
+        Toolbar toolBar = findViewById(R.id.toolbar);
         setSupportActionBar(toolBar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             // Enable the Up button actionBar.setDisplayOptions();
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-        toolBar.setNavigationIcon(R.drawable.ic_info_black_24dp);//设置返回按钮
-        toolBar.setLogo(R.drawable.ic_notifications_black_24dp);//设置标题左侧图标
+        toolBar.setNavigationIcon(R.mipmap.ic_drawer_home);//设置返回按钮
+        toolBar.setLogo(R.mipmap.ic_notifications);//设置标题左侧图标
         toolBar.setTitle("Title");
+        //toolBar.setTitleTextColor(getResources().getColor(android.R.color.white));
+        toolBar.setTitleTextAppearance(this, R.style.tool_bar_title_style);
         toolBar.setSubtitle("Subtitle");
-        toolBar.inflateMenu(R.menu.main_menu);
-        toolBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                Toast.makeText(getApplicationContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
-                return true;
-            }
-        });*/
+        toolBar.setSubtitleTextAppearance(this, R.style.tool_bar_sub_title_style);
+        //toolBar.setSubtitleTextColor(getResources().getColor(android.R.color.white));
+        /**
+         * 备注：这里inflateMenu(int menu) 在设置了setSupportActionBar后无效，但是点击事件还生效
+         */
+//        toolBar.inflateMenu(R.menu.main_menu);
+//        toolBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+//            @Override
+//            public boolean onMenuItemClick(MenuItem item) {
+//                Toast.makeText(getApplicationContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
+//                return true;
+//            }
+//        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.zhihu_toolbar_menu, menu);
         return true;
     }
 

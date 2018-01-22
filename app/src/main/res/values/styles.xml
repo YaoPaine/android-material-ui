@@ -62,4 +62,27 @@
     <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
         <item name="color">@android:color/white</item>
     </style>
+
+    <style name="tool_bar_theme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:actionOverflowButtonStyle">@style/over_flow_button_style</item>
+        <item name="actionOverflowMenuStyle">@style/overflow_menu_style</item>
+    </style>
+    <!--修改toolbar弹出剩余隐藏菜单条目按钮的样式-->
+    <style name="over_flow_button_style" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="android:src">@mipmap/ic_menu_more_overflow</item>
+    </style>
+    <!--设置toolbar设置按钮弹出窗口的显示位置-->
+    <style name="overflow_menu_style" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item> <!--设置为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <style name="tool_bar_title_style" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="tool_bar_sub_title_style" parent="TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 </resources>
