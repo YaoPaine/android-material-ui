@@ -12,12 +12,19 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="MainActivity">
+            android:label="MainActivity"
+            android:parentActivityName=".material.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
+            <!--actionBar.setDisplayHomeAsUpEnabled(true);
+                    就可以点击返回了-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".material.activity.MainActivity" />
         </activity>
 
         <activity android:name=".setting.SettingsActivity" />

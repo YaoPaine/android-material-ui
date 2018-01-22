@@ -1,16 +1,22 @@
 package com.yaopaine.coordinatorylayout;
 
+import android.support.v4.view.ActionProvider;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.TextView;
 
 import com.yaopaine.coordinatorylayout.material.activity.base.BaseActivity;
+import com.yaopaine.coordinatorylayout.toolbar.BadgeActionProvider;
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseActivity implements BadgeActionProvider.OnClickListener {
+    int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +50,33 @@ public class MainActivity extends BaseActivity {
 //        });
     }
 
+    private MenuItem.OnActionExpandListener mActionExpandListener = new MenuItem.OnActionExpandListener() {
+        @Override
+        public boolean onMenuItemActionExpand(MenuItem menuItem) {
+            return true;
+        }
+
+        @Override
+        public boolean onMenuItemActionCollapse(MenuItem menuItem) {
+            return true;
+        }
+    };
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.zhihu_toolbar_menu, menu);
-        return true;
+
+        MenuItem item = menu.findItem(R.id.action_notification);
+        BadgeActionProvider actionProvider = (BadgeActionProvider) MenuItemCompat.getActionProvider(item);
+        actionProvider.setOnClickListener(this);
+
+        MenuItem searchItem = menu.findItem(R.id.action_search);
+        searchItem.setIcon(R.mipmap.ic_search);
+        SearchView searchView = (SearchView) searchItem.getActionView();
+        Log.e("TAG", "actionView: " + searchView);
+
+        item.setOnActionExpandListener(mActionExpandListener);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -70,5 +99,10 @@ public class MainActivity extends BaseActivity {
                 // Invoke the superclass to handle it.
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onClick(View v) {
+        Log.e("TAG", "onClick: " + v);
     }
 }
