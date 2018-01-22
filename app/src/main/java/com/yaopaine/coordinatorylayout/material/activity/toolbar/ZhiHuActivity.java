@@ -19,7 +19,7 @@ public class ZhiHuActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zhi_hu);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.inflateMenu(R.menu.zhihu_toolbar_menu);
 
         toolbar.setNavigationIcon(R.mipmap.ic_drawer_home);

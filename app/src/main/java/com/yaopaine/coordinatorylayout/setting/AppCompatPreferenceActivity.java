@@ -1,4 +1,4 @@
-package com.yaopaine.coordinatorylayout;
+package com.yaopaine.coordinatorylayout.setting;
 
 import android.content.res.Configuration;
 import android.os.Bundle;

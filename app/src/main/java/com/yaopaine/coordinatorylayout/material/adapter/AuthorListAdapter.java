@@ -8,8 +8,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.clock.systemui.R;
-import com.clock.systemui.bean.AuthorInfo;
+import com.yaopaine.coordinatorylayout.R;
+import com.yaopaine.coordinatorylayout.material.bean.AuthorInfo;
 
 import java.util.List;
 

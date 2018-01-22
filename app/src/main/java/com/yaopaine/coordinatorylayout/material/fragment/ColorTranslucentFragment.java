@@ -6,8 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.clock.systemui.R;
-
+import com.yaopaine.coordinatorylayout.R;
 
 public class ColorTranslucentFragment extends Fragment {
 

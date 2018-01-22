@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 
+import com.yaopaine.coordinatorylayout.R;
 import com.yaopaine.coordinatorylayout.material.adapter.AuthorRecyclerAdapter;
 import com.yaopaine.coordinatorylayout.material.bean.AuthorInfo;
 

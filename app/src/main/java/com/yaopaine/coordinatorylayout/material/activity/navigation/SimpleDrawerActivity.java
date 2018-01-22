@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.yaopaine.coordinatorylayout.R;
+
 
 /**
  * 简单的Navigation开发实践

@@ -1,14 +1,11 @@
 package com.yaopaine.coordinatorylayout;
 
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-        Toolbar toolBar = (Toolbar) findViewById(R.id.tool_bar);
+       /* Toolbar toolBar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolBar);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -35,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
                 return true;
             }
-        });
+        });*/
     }
 
     @Override

@@ -5,6 +5,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yaopaine.coordinatorylayout.R;
+
 
 public class SnackBarDemoActivity extends AppCompatActivity implements View.OnClickListener {
 

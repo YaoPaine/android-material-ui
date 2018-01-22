@@ -5,17 +5,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.clock.systemui.R;
-import com.clock.systemui.activity.bs.BottomSheetsDemoActivity;
-import com.clock.systemui.activity.bt.BarTabDemoActivity;
-import com.clock.systemui.activity.cardview.CardViewDemoActivity;
-import com.clock.systemui.activity.collapsing.CollapsingDemoActivity;
-import com.clock.systemui.activity.listview.ListViewDemoActivity;
-import com.clock.systemui.activity.navigation.NavigationDemoActivity;
-import com.clock.systemui.activity.recycler.RecyclerDemoActivity;
-import com.clock.systemui.activity.snackbar.SnackBarDemoActivity;
-import com.clock.systemui.activity.toolbar.ToolDemoActivity;
-import com.clock.systemui.activity.translucent.TranslucentDemoActivity;
+import com.yaopaine.coordinatorylayout.R;
+import com.yaopaine.coordinatorylayout.material.activity.bs.BottomSheetsDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.bt.BarTabDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.cardview.CardViewDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.collapsing.CollapsingDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.listview.ListViewDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.navigation.NavigationDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.recycler.RecyclerDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.snackbar.SnackBarDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.toolbar.ToolDemoActivity;
+import com.yaopaine.coordinatorylayout.material.activity.translucent.TranslucentDemoActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

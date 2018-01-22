@@ -9,9 +9,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.clock.systemui.R;
-import com.clock.systemui.adapter.AuthorRecyclerAdapter;
-import com.clock.systemui.bean.AuthorInfo;
+import com.yaopaine.coordinatorylayout.R;
+import com.yaopaine.coordinatorylayout.material.adapter.AuthorRecyclerAdapter;
+import com.yaopaine.coordinatorylayout.material.bean.AuthorInfo;
 
 /**
  * Created by Clock on 2016/7/26.

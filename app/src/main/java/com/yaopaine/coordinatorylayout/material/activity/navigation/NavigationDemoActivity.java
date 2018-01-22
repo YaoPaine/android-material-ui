@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yaopaine.coordinatorylayout.R;
+
 public class NavigationDemoActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override

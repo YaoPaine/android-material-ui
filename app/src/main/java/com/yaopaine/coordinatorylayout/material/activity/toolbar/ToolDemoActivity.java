@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.yaopaine.coordinatorylayout.R;
 
-public class ToolDemoActivity extends AppCompatActivity implements View.OnClickListener{
+
+public class ToolDemoActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

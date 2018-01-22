@@ -2,6 +2,8 @@ package com.yaopaine.coordinatorylayout.material.activity.translucent;
 
 import android.os.Bundle;
 
+import com.yaopaine.coordinatorylayout.R;
+
 
 /**
  * TranslucentBar最好的实现方式

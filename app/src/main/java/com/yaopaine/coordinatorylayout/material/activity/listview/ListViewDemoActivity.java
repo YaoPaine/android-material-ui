@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.yaopaine.coordinatorylayout.R;
 import com.yaopaine.coordinatorylayout.material.adapter.AuthorListAdapter;
 import com.yaopaine.coordinatorylayout.material.bean.AuthorInfo;
 
