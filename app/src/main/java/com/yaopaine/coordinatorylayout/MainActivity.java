@@ -54,12 +54,16 @@ public class MainActivity extends BaseActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Log.e("TAG", "onOptionsItemSelected: " + item.getTitle());
         switch (item.getItemId()) {
-            case R.id.action_settings:
+            case R.id.action_search:
                 // User chose the "Settings" item, show the app settings UI...
                 return true;
-            case R.id.action_favorite:
+            case R.id.action_notification:
                 // User chose the "Favorite" action, mark the current item
                 // as a favorite...
+                return true;
+            case R.id.action_about:
+                return true;
+            case R.id.action_settings:
                 return true;
             default:
                 // If we got here, the user's action was not recognized.
