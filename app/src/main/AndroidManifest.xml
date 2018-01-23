@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".setting.SettingsActivity"
+            android:name=".MainActivity"
             android:label="SettingsActivity"
             android:parentActivityName=".material.activity.MainActivity">
             <intent-filter>

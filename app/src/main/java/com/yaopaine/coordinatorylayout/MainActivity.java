@@ -53,11 +53,13 @@ public class MainActivity extends BaseActivity implements BadgeActionProvider.On
     private MenuItem.OnActionExpandListener mActionExpandListener = new MenuItem.OnActionExpandListener() {
         @Override
         public boolean onMenuItemActionExpand(MenuItem menuItem) {
+            Log.e("TAG", "onMenuItemActionExpand: " + menuItem.getTitle());
             return true;
         }
 
         @Override
         public boolean onMenuItemActionCollapse(MenuItem menuItem) {
+            Log.e("TAG", "onMenuItemActionCollapse: " + menuItem.getTitle());
             return true;
         }
     };
@@ -83,9 +85,9 @@ public class MainActivity extends BaseActivity implements BadgeActionProvider.On
     public boolean onOptionsItemSelected(MenuItem item) {
         Log.e("TAG", "onOptionsItemSelected: " + item.getTitle());
         switch (item.getItemId()) {
-            case R.id.action_search:
+            /*case R.id.action_search:
                 // User chose the "Settings" item, show the app settings UI...
-                return true;
+                return true;*/
             case R.id.action_notification:
                 // User chose the "Favorite" action, mark the current item
                 // as a favorite...

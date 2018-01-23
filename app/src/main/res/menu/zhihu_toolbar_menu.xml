@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!--加了actionViewClass后不再展示原来的icon-->
+    <!--加了actionViewClass后不再展示原来的icon,可以加如collapseActionView-->
     <item
         android:id="@id/action_search"
         android:icon="@mipmap/ic_search"
         android:title="@string/menu_search"
         app:actionViewClass="android.support.v7.widget.SearchView"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom|collapseActionView" />
     <!--<item
         android:id="@id/action_search"
         android:icon="@mipmap/ic_search"
