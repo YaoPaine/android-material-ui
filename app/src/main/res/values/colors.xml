@@ -15,4 +15,10 @@
     <color name="color_2095f2">#2095f2</color>
     <color name="color_512da8">#512da8</color>
     <color name="color_cd3e3a">#cd3e3a</color>
+
+    <color name="colorPrimaryIcons">#FFFFFF</color>
+    <color name="colorPrimaryLight">#CFD8DC</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#727272</color>
+    <color name="divider">#B6B6B6</color>
 </resources>

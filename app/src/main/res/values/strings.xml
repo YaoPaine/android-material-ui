@@ -59,7 +59,7 @@
         <item>3</item>
     </string-array>
 
-    <string-array name="multi_select_list_preference_default_value"/>
+    <string-array name="multi_select_list_preference_default_value" />
 
     <string name="pref_title_system_sync_settings">System sync settings</string>
 
@@ -91,4 +91,9 @@
     <string name="simple_drawer">SimpleDrawer</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <string name="uc_header_behavior">android.support.design.widget.UcNewsHeaderPagerBehavior</string>
+    <string name="uc_title_behavior">android.support.design.widget.UcNewsTitleBehavior</string>
+    <string name="uc_tba_behavior">android.support.design.widget.UcNewsTabBehavior</string>
+    <string name="uc_content_behavior">android.support.design.widget.UcNewsContentBehavior</string>
 </resources>

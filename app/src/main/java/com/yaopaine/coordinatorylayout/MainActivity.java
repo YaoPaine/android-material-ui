@@ -1,6 +1,5 @@
 package com.yaopaine.coordinatorylayout;
 
-import android.support.v4.view.ActionProvider;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBar;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
 
 import com.yaopaine.coordinatorylayout.material.activity.base.BaseActivity;
 import com.yaopaine.coordinatorylayout.toolbar.BadgeActionProvider;

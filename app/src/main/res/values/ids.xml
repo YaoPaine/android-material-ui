@@ -10,4 +10,6 @@
     <item name="grid" type="id" />
     <item name="staggered" type="id" />
     <item name="partial" type="id" />
+
+    <item name="id_uc_news_header_pager" type="id" />
 </resources>
